@@ -6,11 +6,6 @@ import java.util.Calendar;
 import java.util.List;
 
 public class PeopleMenu extends JFrame{
-
-    // Komponen ini sudah dibuat oleh GUI Designer.
-    // Tambahkan hanya jika belum ada di class kamu:
-    // private JRadioButton aktifRadioButton;
-    // private JRadioButton nonaktifRadioButton;
     private JTextField textField1;
     private JTextField textField2;
     private JButton addUpdateButton;
@@ -376,25 +371,12 @@ public class PeopleMenu extends JFrame{
 
     // Menjalankan aplikasi
     public static void main(String[] args) {
-        // buat object window
         PeopleMenu menu = new PeopleMenu();
-
-        // atur ukuran window
         menu.setSize( 600, 500);
-
-        // Letakkan window di tengah layar
         menu.setLocationRelativeTo(null);
-
-        // isi window
         menu.setContentPane(menu.mainPanel);
-
-        // ubah warna background
         menu.getContentPane().setBackground(Color.WHITE);
-
-        // tampilkan window
         menu.setVisible(true);
-
-        // agar program ikut berhenti saat window diclose
         menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
